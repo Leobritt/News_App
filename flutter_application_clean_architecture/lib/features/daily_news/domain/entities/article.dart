@@ -22,6 +22,8 @@ class ArticleEntity extends Equatable {
     this.content,
   });
 
+//props propety decides which objects we should consider for object comparison
+//props is a getter method return a list of objects available in this class
   @override
   List<Object?> get props {
     return [
