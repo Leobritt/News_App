@@ -46,11 +46,11 @@ dependencies:
   #formatação de data
   floor: ^1.4.2
   #gerado de pacotes q usa o sqlite para armazenar dados localmente
-  retrofit: ^3.0.1
   #para fazer requisições para api
   flutter_hooks: ^0.18.3
   #maneja o ciclo de vida dos widgets aumentando o compartilhamento de codigo 
   cached_network_image: ^3.2.0
+  retrofit: ^4.0.1
   #biblioteca para mostrar img da internet e manter elas no cache
 
 dev_dependencies:
@@ -58,9 +58,9 @@ dev_dependencies:
     sdk: flutter
    #ver sobre isso 
   flutter_lints: ^1.0.0
-  retrofit_generator: 3.0.1+1
-  floor_generator: 1.2.0
-  build_runner: 2.1.2
+  retrofit_generator: ^7.0.8
+  floor_generator: ^1.4.2
+  build_runner: ^2.4.6
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -102,8 +102,7 @@ flutter:
         - asset: assets/Mulish-Light.ttf
         - asset: assets/Mulish-Bold.ttf
           #style: italic
-          weight: 700
-          weight: 300
+        
 
   #   - family: Trajan Pro]]
   #     fonts:

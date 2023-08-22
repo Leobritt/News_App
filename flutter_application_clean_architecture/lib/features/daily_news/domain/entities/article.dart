@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-
+//response from api
 class ArticleEntity extends Equatable {
   //Equatable allow ease value comparisons
   final int? id;

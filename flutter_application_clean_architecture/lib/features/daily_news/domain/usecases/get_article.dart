@@ -1,0 +1,17 @@
+import 'package:flutter_application_clean_architecture/core/resources/data_state.dart';
+import 'package:flutter_application_clean_architecture/core/resources/usecase/usecase.dart';
+import 'package:flutter_application_clean_architecture/features/daily_news/domain/entities/article.dart';
+import 'package:flutter_application_clean_architecture/features/daily_news/domain/repository/article_repository.dart';
+
+class GetArticleUseCase implements UseCase<DataState<List<ArticleEntity>>, void>{
+  //gets data from the repository
+  //an instance of the news articleRepository and set in the class constructor 
+  final ArticleRepository _articleRepository;
+  GetArticleUseCase(this._articleRepository);
+  @override
+  Future<DataState<List<ArticleEntity>>> call({void params}) {
+    //get data from yhe repository and return it
+   return _articleRepository.getNewArticles();
+  }
+
+}
